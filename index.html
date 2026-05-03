@@ -1,0 +1,134 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário, Daniel!</title>  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-bottom: 30px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .message {
+      margin-top: 40px;
+      font-size: 1.3em;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    .heart {
+      color: red;
+      font-size: 2em;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #ff4081;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e73370;
+    }
+  </style></head>
+<body>  <div class="container">
+    <h1>🎉 Feliz Aniversário, Daniel! 🎂</h1>
+    <h2>38 anos de histórias incríveis!</h2><button onclick="playMusic()">▶️ Tocar música</button>
+
+<audio id="bg-music" loop>
+  <!-- Troque pelo link da sua música -->
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<div class="gallery">
+  <!-- Substitua pelas fotos reais -->
+  <img src="foto1.jpg" alt="Foto 1">
+  <img src="foto2.jpg" alt="Foto 2">
+  <img src="foto3.jpg" alt="Foto 3">
+  <img src="foto4.jpg" alt="Foto 4">
+</div>
+
+<div class="message">
+  <p>
+    Hoje é um dia especial pra celebrar você! 🎉<br><br>
+    Obrigado por ser esse irmão incrível, parceiro de vida e inspiração.
+    Que seus 38 anos venham cheios de saúde, conquistas e momentos inesquecíveis!
+  </p>
+  <p class="heart">❤️</p>
+</div>
+
+<div class="footer">
+  Feito com carinho 💙
+</div>
+
+  </div>  <script>
+    function playMusic() {
+      const music = document.getElementById('bg-music');
+      music.play();
+    }
+  </script></body>
+</html>
